@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
       ".video-preview",
       {
           duration: 1,
-          height: "200px",
+          height: "350px",
           ease: "power2.out",
       },
       "<",

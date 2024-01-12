@@ -25,6 +25,7 @@
 }
 
 
+
 .btn:before {
     content: "";
     position: absolute;
@@ -32,13 +33,13 @@
     left: 0;
     width: 0;
     height: 100%;
-    background: var(--color-menu-text);
+    background: black;
     transition: 0.3s all;
     z-index: -1;
 }
 
 .btn:hover a {
-    color: var(--color-menu-overlay);
+    color: white;
 }
 
 .btn:hover.btn:before {
