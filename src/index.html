@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saaf</title>
+    <link href="./output.css" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web@2.0.3"></script>
+</head>
+<body class="bg-[#000000]">
+   
+    <div class="">
+        <!-- shows on every where -->
+        <nav class="shownNavbar bg-[#ffffffe8] w-full fixed flex justify-between items-center py-[25px] px-[55px]">
+            <div class="logo text-[30px]">saaf.</div>
+            <div class="menu-btn-open cursor-pointer text-[25px]">menu</div>
+        </nav>
+
+        <!-- after the click menu button this will be shown -->
+        <div class="menu-overlay w-full p-[2em] bg-[#e7dfdff1] pointer-events-none">
+            <div class="menu-nav flex justify-between mb-[1em] text-[#000000]">
+                <div class="menu-logo">saaf.</div>
+                <div class="menu-close-btn cursor-pointer">Close</div>
+            </div>
+            <div class="menu-cols flex">
+                <div class="col flex-1 py-4">
+                    <div class="video w-[50%]">
+                        <div class="video-preview w-full h-0 h- bg-[url('./images/clark-tibbs-oqStl2L5oxI-unsplash.jpg')] bg-cover rounded-[4px]"></div>
+                        <div class="video-details w-full flex justify-between py-2 text-[#000000]">
+                            <p><i class="ph-fill ph-play-circle"></i> Play reel</p>
+                            <p>-01:18</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col flex-1 py-4">
+                    <div class="menu-link relative w-max">
+                        <a class="text-[40px]" href="#">Home</a>
+                    </div>
+                    <div class="menu-link relative w-max">
+                        <a class="text-[40px]" href="#">Workplace</a>
+                    </div>
+                    <div class="menu-link relative w-max">
+                        <a class="text-[40px]" href="#">Services & Models</a>
+                    </div>
+                    <div class="menu-link relative w-max">
+                        <a class="text-[40px]" href="#">Our Story</a>
+                    </div>
+                    <div class="menu-link relative w-max">
+                        <a class="text-[40px]" href="#">Contact</a>
+                    </div>
+                    <div class="btn relative my-8 border border-[#000000] w-max py-5 px-10 rounded-[4px] overflow-hidden cursor-pointer">
+                        <a href="#">Take a seat</a>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-footer flex flex-col text-[#000000]">
+                <div class="menu-divider w-0 h-[1px] bg-black my-4"></div>
+                <div class="menu-footer-copy flex justify-between">
+                    <div class="slogan"><p>Tomorrow's Brand, Today.</p></div>
+                    <div class="socials flex gap-4">
+                        <a href="#">Twitter</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- For lenis -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

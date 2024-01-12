@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+.menu-overlay {
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+
+.menu-link:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: black;
+    transition: 0.3s all;
+}
+
+.menu-link:hover.menu-link:after {
+    width: 100%;
+}
+
+
+.btn:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--color-menu-text);
+    transition: 0.3s all;
+    z-index: -1;
+}
+
+.btn:hover a {
+    color: var(--color-menu-overlay);
+}
+
+.btn:hover.btn:before {
+    width: 100%;
+}
