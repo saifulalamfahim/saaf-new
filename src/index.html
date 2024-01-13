@@ -12,15 +12,23 @@
     <div class="">
         <!-- shows on every where -->
         <nav class="shownNavbar  w-full fixed flex justify-between items-center py-[25px] px-[55px]">
-            <div class="logo text-[30px]">saaf.</div>
-            <div class="menu-btn-open cursor-pointer text-[25px]">menu</div>
+            <div class="logo text-[30px] font-medium font-dmSans">saaf.</div>
+            <div class="menu-btn-open cursor-pointer text-[25px]">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <path d="M13.3303 25.7698V19.1032H18.6636V25.7698C18.6636 26.5032 19.2636 27.1032 19.997 27.1032H23.997C24.7303 27.1032 25.3303 26.5032 25.3303 25.7698V16.4365H27.597C28.2103 16.4365 28.5036 15.6765 28.037 15.2765L16.8903 5.23648C16.3836 4.78315 15.6103 4.78315 15.1036 5.23648L3.95696 15.2765C3.50362 15.6765 3.78362 16.4365 4.39696 16.4365H6.66362V25.7698C6.66362 26.5032 7.26362 27.1032 7.99696 27.1032H11.997C12.7303 27.1032 13.3303 26.5032 13.3303 25.7698Z" fill="#000000"/>
+                  </svg>
+            </div>
         </nav>
 
         <!-- after the click menu button this will be shown -->
-        <div class="menu-overlay w-full p-[2em] bg-[#831ED2] pointer-events-none text-[#ffffff]">
-            <div class="menu-nav flex justify-between mb-[1em]">
-                <div class="menu-logo">saaf.</div>
-                <div class="menu-close-btn cursor-pointer">Close</div>
+        <div class="menu-overlay w-full p-[2em] bg-[#831ED2] pointer-events-none text-[#ffffff] font-dmSans">
+            <div class="menu-nav flex justify-between items-center sm:mx-[25px] mb-[1em]">
+                <div class="menu-logo text-[30px] font-medium font-dmSans">saaf.</div>
+                <div class="menu-close-btn cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 32 32" fill="none">
+                        <path d="M3 29L29 3M3 3L29 29" stroke="white" stroke-width="2.67" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                </div>
             </div>
             <div class="menu-cols block lg:flex">
                 <div class="col hidden lg:block flex-1 py-4">
@@ -34,19 +42,19 @@
                 </div>
                 <div class="col flex-1 py-4 sm:ml-[150px] lg:ml-0">
                     <div class="menu-link relative w-max mb-1 lg:mb-0">
-                        <a class="text-[18px] sm:text-[30px] lg:text-[40px]" href="#">HOME</a>
+                        <a class="text-[18px] sm:text-[30px] lg:text-[40px]" href="#">Home</a>
                     </div>
                     <div class="menu-link relative w-max mb-1 lg:mb-0">
-                        <a class="text-[18px] sm:text-[30px] lg:text-[40px]" href="#">ABOUT</a>
+                        <a class="text-[18px] sm:text-[30px] lg:text-[40px]" href="#">About</a>
                     </div>
                     <div class="menu-link relative w-max mb-1 lg:mb-0">
-                        <a class="text-[18px] sm:text-[30px] lg:text-[40px]" href="#">EXPERIENCES & WORKS</a>
+                        <a class="text-[18px] sm:text-[30px] lg:text-[40px]" href="#">Experiences & Works</a>
                     </div>
                     <div class="menu-link relative w-max mb-1 lg:mb-0">
-                        <a class="text-[18px] sm:text-[30px] lg:text-[40px]" href="#">PROJECTS</a>
+                        <a class="text-[18px] sm:text-[30px] lg:text-[40px]" href="#">Projects</a>
                     </div>
                     <div class="menu-link relative w-max mb-1 lg:mb-0">
-                        <a class="text-[18px] sm:text-[30px] lg:text-[40px]" href="#">HIRE ME</a>
+                        <a class="text-[18px] sm:text-[30px] lg:text-[40px]" href="#">Hire me</a>
                     </div>
                     <div class="btn relative mt-8 sm:my-8 bg-[#000000] sm:bg-transparent sm:border sm:border-[#000000] w-max py-3 sm:py-5 px-14 rounded-[4px] overflow-hidden cursor-pointer">
                         <a href="#">Resume</a>
