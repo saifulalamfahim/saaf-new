@@ -11,7 +11,7 @@
    
     <div class="">
         <!-- shows on every where -->
-        <nav class="shownNavbar w-full flex justify-between items-center py-[25px] px-[55px]">
+        <nav class="shownNavbar max-w-[1440px] mx-auto flex justify-between items-center py-[25px] px-[55px]">
             <div class="logo text-[30px] font-medium font-dmSans">saaf.</div>
             <div class="menu-btn-open cursor-pointer text-[25px]">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
@@ -19,12 +19,8 @@
                   </svg>
             </div>
         </nav>
-        <div class="absolute top-20 text-[50px]">
-            <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt, earum. Eos temporibus, mollitia soluta cum quas doloribus inventore. Reprehenderit obcaecati dolor praesentium sit illum esse! Illo alias laudantium esse commodi quas! At sapiente beatae commodi aperiam debitis vero impedit voluptatibus eligendi quaerat, voluptates qui veniam, eius hic earum accusantium totam soluta fugiat obcaecati ex atque reiciendis libero consequuntur quis? Mollitia quis explicabo iste, veniam quas laborum dolor repellendus pariatur odit id quisquam nesciunt culpa ipsa quam maxime non officiis tenetur error facilis minima laboriosam temporibus assumenda. Id architecto illo quo eligendi soluta molestiae voluptas omnis? Illum assumenda cum, reprehenderit suscipit in sapiente odit corporis. Ipsam unde alias fugit modi impedit, excepturi suscipit consequatur, placeat voluptatum cupiditate laudantium, nulla perspiciatis! Cumque placeat corrupti reiciendis enim laudantium culpa inventore dolorem? Suscipit consequatur commodi quia, laboriosam, sunt autem in, ea fuga esse fugit quidem cumque assumenda ab cum nobis mollitia. Sit, qui corporis!
-            </h1>
-        </div>
         <!-- after the click menu button this will be shown -->
-        <div class="menu-overlay fixed overflow-scroll w-full p-[2em] bg-[#831ED2] pointer-events-none text-[#ffffff] font-dmSans">
+        <div class="menu-overlay top-0 fixed w-full p-[2em] bg-[#831ED2] pointer-events-none text-[#ffffff] font-dmSans">
             <div class="menu-nav flex justify-between items-center sm:mx-[25px] mb-[1em]">
                 <div class="menu-logo text-[30px] font-medium font-dmSans">saaf.</div>
                 <div class="menu-close-btn cursor-pointer">
@@ -76,6 +72,41 @@
                 </div>
             </div>
         </div>
+        <!-- Hero Section -->
+        <section class="flex justify-center items-center">
+           <div>
+            <div class="text-[50px] flex justify-between items-end gap-x-[266px] mt-[300px]">
+                <h1 class="max-w-[560px] text-[60px] text-[#181717] font-inter leading-[97%] tracking-[-1.8px]">Hello, I’m <br> Saiful Alam Fahim.</h1>
+                <p class="max-w-[570px] text-[24px] text-[#606060] font-dmSans leading-[117%]">My goal is to help you create a website that meets your customers' needs and drives business growth.</p>
+            </div>
+            <svg class="mt-[60px]" xmlns="http://www.w3.org/2000/svg" width="34" height="39" viewBox="0 0 34 39" fill="none">
+                <path d="M19.2187 0.181824H14.4176V29.2102L3.31959 18.1122L0.0326538 21.4361L16.8182 38.2216L33.6406 21.4361L30.2798 18.1122L19.2187 29.2102V0.181824Z" fill="#181717"/>
+              </svg>
+           </div>
+        </section>
+        <!-- Technologies section-->
+        <section class="flex justify-center items-center max-w-[1440px] mx-auto my-44 px-[60px]">
+            <div class="flex justify-center gap-[20px]">
+                <h3 class="max-w-[560px] text-[24px] text-[#181717] font-inter tracking-[-1.0px]">Technologies:</h3>
+                <div class="flex flex-wrap justify-start items-center gap-[15px]">
+                    <p class="bg-yellow-300 px-5 py-1 rounded-[20px] shadow-md"><a href="https://javascript.info/" target="_blank">Javascript</a></p>
+                    <p class="bg-[#377CC8] text-[#ffffff] px-5 py-1 rounded-[20px] shadow-md"><a href="https://www.typescriptlang.org/docs/" target="_blank">Typescript</a></p>
+                    <p class="bg-[#FC4F13] text-[#ffffff] px-5 py-1 rounded-[20px] shadow-md"><a href="https://www.w3schools.com/html/html_intro.asp" target="_blank">HTML</a></p>
+                    <p class="bg-[#2D53E5] text-[#ffffff] px-5 py-1 rounded-[20px] shadow-md"><a href="https://www.w3schools.com/css/css_intro.asp" target="_blank">CSS</a></p>
+                    <p class="bg-[#50D6FF] px-5 py-1 rounded-[20px] shadow-md"><a href="https://react.dev/learn" target="_blank">React.js</a></p>
+                    <p class="bg-[#080808] text-[#ffffff] px-5 py-1 rounded-[20px] shadow-md"><a href="https://nextjs.org/docs" target="_blank">Next.js</a></p>
+                    <p class="bg-[#8BD008] px-5 py-1 rounded-[20px] shadow-md"><a href="https://gsap.com/docs/v3/" target="_blank">GSAP</a></p>
+                    <p class="bg-[#0B1C2E] text-[#ffffff] px-5 py-1 rounded-[20px] shadow-md"><a href="https://tailwindcss.com/docs/installation" target="_blank">TailwindCSS</a></p>
+                    <p class="bg-[#8117F9] text-[#ffffff] px-5 py-1 rounded-[20px] shadow-md"><a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/" target="_blank">Bootstrap</a></p>
+                    <p class="bg-[#2390FA] text-[#ffffff] px-5 py-1 rounded-[20px] shadow-md"><a href="https://mui.com/material-ui/getting-started/" target="_blank">Material UI</a></p>
+                    <p class="bg-[#67CBD0] px-5 py-1 rounded-[20px] shadow-md"><a href="https://chakra-ui.com/getting-started" target="_blank">Chakra UI</a></p>
+                    <p class="bg-[#000000] text-[#ffffff] px-5 py-1 rounded-[20px] shadow-md"><a href="https://www.framer.com/motion/" target="_blank">Framer</a></p>
+                    <p class="bg-[#146EF5] text-[#ffffff] px-5 py-1 rounded-[20px] shadow-md"><a href="https://developers.webflow.com/docs/getting-started-apps" target="_blank">Webflow</a></p>
+                    <p class="bg-[#000000] text-[#ffffff] px-5 py-1 rounded-[20px] shadow-md"><a href="https://dev.wix.com/docs" target="_blank">Wix</a></p>
+                    <p class="bg-[#186EE6] text-[#ffffff] px-5 py-1 rounded-[20px] shadow-md"><a href="https://swipepages.com/" target="_blank">Swipe Pages</a></p>
+                </div>
+            </div>  
+        </section>
 
        
        

@@ -55,21 +55,21 @@ document.addEventListener("DOMContentLoaded", function () {
     );
   
     function openMenu() {
-        document.querySelector(".shownNavbar").style.display = "none";
+        // document.querySelector(".shownNavbar").style.display = "none";
         document.querySelector(".menu-overlay").style.pointerEvents = "all";
-        document.querySelector(".menu-overlay").style.marginTop = "0";
+        // document.querySelector(".menu-overlay").style.marginTop = "0";
         tl.play();
     }
   
     function closeMenu() {
         document.querySelector(".menu-overlay").style.pointerEvents = "none";
-        document.querySelector(".menu-overlay").style.marginTop = "-95px";
+        // document.querySelector(".menu-overlay").style.marginTop = "-95px";
         tl.reverse();
-        document.querySelector(".shownNavbar").style.display = "flex";
+        // document.querySelector(".shownNavbar").style.display = "flex";
         // document.querySelector(".shownNavbar").style.marginTop = "100px";
     }
     
-    document.querySelector(".shownNavbar").addEventListener("click", openMenu);
+    // document.querySelector(".shownNavbar").addEventListener("click", openMenu);
     document.querySelector(".menu-btn-open").addEventListener("click", openMenu);
     document.querySelector(".menu-close-btn").addEventListener("click", closeMenu);
     // document.querySelector(".menu-link").addEventListener("click", closeMenu);
