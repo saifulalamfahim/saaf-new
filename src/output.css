@@ -556,12 +556,44 @@ video {
   pointer-events: none;
 }
 
+.pointer-events-auto{
+  pointer-events: auto;
+}
+
 .fixed{
   position: fixed;
 }
 
+.absolute{
+  position: absolute;
+}
+
 .relative{
   position: relative;
+}
+
+.bottom-0{
+  bottom: 0px;
+}
+
+.top-10{
+  top: 2.5rem;
+}
+
+.top-20{
+  top: 5rem;
+}
+
+.z-10{
+  z-index: 10;
+}
+
+.z-\[1\]{
+  z-index: 1;
+}
+
+.z-\[-1\]{
+  z-index: -1;
 }
 
 .mx-auto{
@@ -572,11 +604,6 @@ video {
 .my-4{
   margin-top: 1rem;
   margin-bottom: 1rem;
-}
-
-.mx-\[25px\]{
-  margin-left: 25px;
-  margin-right: 25px;
 }
 
 .mb-1{
@@ -628,6 +655,14 @@ video {
   width: max-content;
 }
 
+.w-\[1440px\]{
+  width: 1440px;
+}
+
+.max-w-\[1440px\]{
+  max-width: 1440px;
+}
+
 .flex-1{
   flex: 1 1 0%;
 }
@@ -644,6 +679,10 @@ video {
   align-items: center;
 }
 
+.justify-center{
+  justify-content: center;
+}
+
 .justify-between{
   justify-content: space-between;
 }
@@ -654,6 +693,22 @@ video {
 
 .overflow-hidden{
   overflow: hidden;
+}
+
+.overflow-clip{
+  overflow: clip;
+}
+
+.overflow-visible{
+  overflow: visible;
+}
+
+.overflow-scroll{
+  overflow: scroll;
+}
+
+.overflow-ellipsis{
+  text-overflow: ellipsis;
 }
 
 .rounded-\[20px\]{
@@ -730,18 +785,6 @@ video {
   font-family: DM Sans, sans-serif;
 }
 
-.font-sarif{
-  font-family: Instrument Serif, Serif;
-}
-
-.font-inter{
-  font-family: Inter, sans-serif;
-}
-
-.font-code{
-  font-family: Fira Code, monospace;
-}
-
 .text-\[18px\]{
   font-size: 18px;
 }
@@ -754,36 +797,16 @@ video {
   font-size: 30px;
 }
 
-.font-bold{
-  font-weight: 700;
+.text-\[50px\]{
+  font-size: 50px;
 }
 
-.font-semibold{
-  font-weight: 600;
+.text-\[130px\]{
+  font-size: 130px;
 }
 
 .font-medium{
   font-weight: 500;
-}
-
-.tracking-tighter{
-  letter-spacing: -0.05em;
-}
-
-.tracking-\[-2px\]{
-  letter-spacing: -2px;
-}
-
-.tracking-\[-8px\]{
-  letter-spacing: -8px;
-}
-
-.tracking-\[-3px\]{
-  letter-spacing: -3px;
-}
-
-.tracking-\[3px\]{
-  letter-spacing: 3px;
 }
 
 .text-\[\#ffffff\]{
@@ -793,6 +816,11 @@ video {
 
 .text-\[\#ffffffc2\]{
   color: #ffffffc2;
+}
+
+.text-red-500{
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 
 .menu-overlay {
@@ -836,14 +864,14 @@ video {
 }
 
 @media (min-width: 640px){
-  .sm\:my-8{
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-  }
-
   .sm\:mx-\[25px\]{
     margin-left: 25px;
     margin-right: 25px;
+  }
+
+  .sm\:my-8{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 
   .sm\:ml-\[150px\]{
