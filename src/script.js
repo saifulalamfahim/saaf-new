@@ -91,4 +91,20 @@ ScrollTrigger.create({
 	start:"top top",
 	end:"bottom bottom",
 	pin:".right-new"
-})
+});
+
+
+
+gsap.from(
+    ".btnTwo",
+    {
+        opacity: 0,
+        y: 60,
+        stagger: 0.05,
+        duration:0.75,
+        ease:"power1.inOut",
+    },)
+
+
+
+

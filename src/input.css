@@ -15,7 +15,7 @@
 
 
 
-
+/* for navbar */
 .menu-overlay {
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
 }
@@ -56,3 +56,26 @@
 .btn:hover.btn:before {
     width: 100%;
 }
+
+
+.btnTwo:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: black;
+    transition: 0.3s all;
+    z-index: -1;
+}
+
+.btnTwo:hover {
+    color: white;
+}
+
+.btnTwo:hover.btnTwo:before {
+    width: 100%;
+}
+
+
