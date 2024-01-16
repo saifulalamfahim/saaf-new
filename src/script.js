@@ -1,16 +1,16 @@
 // Lenis Fro Smooth Scrolling
-// const lenis = new Lenis()
+const lenis = new Lenis()
 
-// lenis.on('scroll', (e) => {
-//   console.log(e)
-// })
+lenis.on('scroll', (e) => {
+  console.log(e)
+})
 
-// function raf(time) {
-//   lenis.raf(time)
-//   requestAnimationFrame(raf)
-// }
+function raf(time) {
+  lenis.raf(time)
+  requestAnimationFrame(raf)
+}
 
-// requestAnimationFrame(raf)
+requestAnimationFrame(raf)
 
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -79,13 +79,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+//   for experience section (pin the right side)...............................
+
 // gsap.set(".position:not(:first-child)", {opacity:0, scale:0.5})
 
 // const animation = gsap.to(".position:not(:first-child)", {
 // 	opacity:1, scale:1, duration:1, stagger:1
 // })
-
-
 ScrollTrigger.create({
 	trigger:".gallery",
 	start:"top top",
@@ -94,7 +94,7 @@ ScrollTrigger.create({
 });
 
 
-
+// For button
 gsap.from(
     ".btnTwo",
     {
