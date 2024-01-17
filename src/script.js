@@ -13,6 +13,8 @@ function raf(time) {
 requestAnimationFrame(raf)
 
 
+
+// for navbar
 document.addEventListener("DOMContentLoaded", function () {
     let tl = gsap.timeline({ paused: true});
   
@@ -85,6 +87,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // const animation = gsap.to(".position:not(:first-child)", {
 // 	opacity:1, scale:1, duration:1, stagger:1
+
+
 // })
 ScrollTrigger.create({
 	trigger:".gallery",
@@ -103,7 +107,25 @@ gsap.from(
         stagger: 0.05,
         duration:0.75,
         ease:"power1.inOut",
-    },)
+    },);
+
+
+
+// for Projects
+const slider = document.querySelector(".slider-new");
+
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.to(slider, {
+    xPercent: -80.5,
+    ease: "none",
+    scrollTrigger: {
+        trigger: slider,
+        pin: true,
+        scrub: true,
+        end: () => "+=" + slider.offsetWidth
+    }
+});
 
 
 
