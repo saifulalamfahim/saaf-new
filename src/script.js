@@ -114,18 +114,31 @@ gsap.from(
 // for Projects
 const slider = document.querySelector(".slider-new");
 
-gsap.registerPlugin(ScrollTrigger);
+// Responsive adjustments using media queries
+const largeScreen = window.matchMedia("(min-width: 1024px) and (max-width: 1535px)");
 
-gsap.to(slider, {
-    xPercent: -80.5,
-    ease: "none",
-    scrollTrigger: {
-        trigger: slider,
-        pin: true,
-        scrub: true,
-        end: () => "+=" + slider.offsetWidth
+function handleMediaQueryChange() {
+    if (largeScreen.matches) {
+        // Enable the GSAP animation for screens larger than or equal to 1024px
+        gsap.to(slider, {
+            xPercent: -80.5,
+            ease: "none",
+            scrollTrigger: {
+                trigger: slider,
+                pin: true,
+                scrub: true,
+                end: () => "+=" + slider.offsetWidth
+            }
+        });
+    } else {
+        // Disable the GSAP animation for smaller screens
+        gsap.to(slider, { xPercent: 0 });
     }
-});
+}
+
+// Initial check and add listener for changes
+handleMediaQueryChange();
+largeScreen.addListener(handleMediaQueryChange);
 
 
 
