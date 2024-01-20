@@ -587,11 +587,6 @@ video {
   margin-bottom: 11rem;
 }
 
-.my-96{
-  margin-top: 24rem;
-  margin-bottom: 24rem;
-}
-
 .mb-1{
   margin-bottom: 0.25rem;
 }
@@ -656,10 +651,6 @@ video {
   margin-top: 60px;
 }
 
-.mt-20{
-  margin-top: 5rem;
-}
-
 .block{
   display: block;
 }
@@ -721,6 +712,10 @@ video {
   max-width: 1440px;
 }
 
+.max-w-\[150px\]{
+  max-width: 150px;
+}
+
 .max-w-\[560px\]{
   max-width: 560px;
 }
@@ -737,33 +732,16 @@ video {
   max-width: 750px;
 }
 
-.max-w-\[350px\]{
-  max-width: 350px;
-}
-
-.max-w-\[250px\]{
-  max-width: 250px;
-}
-
-.max-w-\[150px\]{
-  max-width: 150px;
-}
-
-.max-w-\[100px\]{
-  max-width: 100px;
-}
-
 .flex-1{
   flex: 1 1 0%;
 }
 
-.cursor-pointer{
-  cursor: pointer;
+.cursor-none{
+  cursor: none;
 }
 
-.scroll-my-96{
-  scroll-margin-top: 24rem;
-  scroll-margin-bottom: 24rem;
+.cursor-pointer{
+  cursor: pointer;
 }
 
 .list-disc{
@@ -826,10 +804,6 @@ video {
   gap: 90px;
 }
 
-.gap-\[40px\]{
-  gap: 40px;
-}
-
 .gap-x-\[30px\]{
   -moz-column-gap: 30px;
        column-gap: 30px;
@@ -843,6 +817,10 @@ video {
   border-radius: 12px;
 }
 
+.rounded-\[16px\]{
+  border-radius: 16px;
+}
+
 .rounded-\[20px\]{
   border-radius: 20px;
 }
@@ -853,14 +831,6 @@ video {
 
 .rounded-\[8px\]{
   border-radius: 8px;
-}
-
-.rounded-\[32px\]{
-  border-radius: 32px;
-}
-
-.rounded-\[16px\]{
-  border-radius: 16px;
 }
 
 .border{
@@ -1231,6 +1201,44 @@ video {
   width: 100%;
 }
 
+.circle {
+  position: fixed;
+  background-color: #000000a2;
+  width: 20px;
+  height: 20px;
+  left:-1px;
+  top:-1px;
+  border-radius: 100%;
+  /* // user-select: none; */
+  /* // pointer-events: none; */
+  z-index: 10000;
+  transform: scale(1);
+  &.active {
+    opacity: 1;
+    transform: scale(0);
+  }
+}
+
+.circle-follow {
+  position: fixed;
+  border:1px solid #841ed2b0;
+  width: 60px;
+  height: 60px;
+  left:-21px;
+  top:-21px;
+  border-radius: 100%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  pointer-events: none;
+  z-index: 10000;
+  /* //overflow: hidden; */
+  transform: scale(1);
+  &.active {
+    transform: scale(3);
+  }
+}
+
 @media (min-width: 640px){
   .sm\:mx-\[25px\]{
     margin-left: 25px;
@@ -1572,8 +1580,6 @@ video {
     overflow-x: auto;
   }
 }
-
-
 
 
 

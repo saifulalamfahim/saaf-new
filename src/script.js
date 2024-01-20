@@ -143,3 +143,20 @@ largeScreen.addListener(handleMediaQueryChange);
 
 
 
+
+var circle = document.querySelector('.circle');
+var follow = document.querySelector('.circle-follow');
+
+function moveCircle(e) {
+    circle.style.transition = '0.05s';
+    circle.style.transform = 'translate(' + e.clientX + 'px, ' + e.clientY + 'px)';
+
+    follow.style.transition = '0.2s';
+    follow.style.transform = 'translate(' + e.clientX + 'px, ' + e.clientY + 'px)';
+}
+
+window.addEventListener('mousemove', moveCircle);
+
+
+
+
