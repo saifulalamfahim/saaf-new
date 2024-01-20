@@ -144,6 +144,8 @@ largeScreen.addListener(handleMediaQueryChange);
 
 
 
+
+// For cursor
 var circle = document.querySelector('.circle');
 var follow = document.querySelector('.circle-follow');
 
@@ -159,4 +161,25 @@ window.addEventListener('mousemove', moveCircle);
 
 
 
+// for contact
+function sendMessage() {
+    (function() {
+        emailjs.init('scCIIhcaGgIYsB8CX');
+    })();
+    var serviceID = "service_fg64w1z"; //Email Service ID 
+    var templateID = "template_pwazrn8"; //Email Service ID 
+
+    var params = {
+        sendername: document.querySelector("#name").value,
+        senderemail: document.querySelector("#email").value,
+        subject: document.querySelector("#subject").value,
+        message: document.querySelector("#message").value,
+    };
+
+    emailjs.send(serviceID, templateID, params)
+    .then(res => {
+        alert("thank you," + params["sendername"] + "! Your message has been sent")
+    })
+    .catch();
+}
 

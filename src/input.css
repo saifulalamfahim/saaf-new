@@ -58,6 +58,9 @@
 }
 
 
+
+
+/* for button */
 .btnTwo:before {
     content: "";
     position: absolute;
@@ -78,13 +81,7 @@
     width: 100%;
 }
 
-
-
-
-
-
-
-
+/* /For cursor */
 .circle {
     position: fixed;
     background-color: #000000a2;
@@ -122,6 +119,11 @@
         transform: scale(3);
     }  
 }
+
+
+
+
+
 
 
 
