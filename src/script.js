@@ -1,16 +1,19 @@
 // Lenis Fro Smooth Scrolling
+// const lenis = new Lenis()
+
 const lenis = new Lenis()
 
 lenis.on('scroll', (e) => {
   console.log(e)
 })
 
-function raf(time) {
-  lenis.raf(time)
-  requestAnimationFrame(raf)
-}
+lenis.on('scroll', ScrollTrigger.update)
 
-requestAnimationFrame(raf)
+gsap.ticker.add((time)=>{
+  lenis.raf(time * 500)
+})
+
+gsap.ticker.lagSmoothing(0)
 
 
 
@@ -150,10 +153,10 @@ var circle = document.querySelector('.circle');
 var follow = document.querySelector('.circle-follow');
 
 function moveCircle(e) {
-    circle.style.transition = '0.05s';
+    circle.style.transition = '0.01s';
     circle.style.transform = 'translate(' + e.clientX + 'px, ' + e.clientY + 'px)';
 
-    follow.style.transition = '0.2s';
+    follow.style.transition = '0.3s';
     follow.style.transform = 'translate(' + e.clientX + 'px, ' + e.clientY + 'px)';
 }
 
