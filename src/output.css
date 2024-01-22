@@ -587,6 +587,11 @@ video {
   margin-bottom: 11rem;
 }
 
+.my-28{
+  margin-top: 7rem;
+  margin-bottom: 7rem;
+}
+
 .mb-1{
   margin-bottom: 0.25rem;
 }
@@ -665,6 +670,22 @@ video {
 
 .mt-\[60px\]{
   margin-top: 60px;
+}
+
+.mb-\[1em\]{
+  margin-bottom: 1em;
+}
+
+.ml-\[-50px\]{
+  margin-left: -50px;
+}
+
+.mt-40{
+  margin-top: 10rem;
+}
+
+.mb-36{
+  margin-bottom: 9rem;
 }
 
 .box-border{
@@ -1145,6 +1166,10 @@ video {
   font-size: 40px;
 }
 
+.text-\[32px\]{
+  font-size: 32px;
+}
+
 .font-bold{
   font-weight: 700;
 }
@@ -1231,6 +1256,10 @@ video {
 .text-sky-500{
   --tw-text-opacity: 1;
   color: rgb(14 165 233 / var(--tw-text-opacity));
+}
+
+.underline{
+  text-decoration-line: underline;
 }
 
 .shadow-lg{
@@ -1370,6 +1399,11 @@ video {
     margin-bottom: 24rem;
   }
 
+  .sm\:my-44{
+    margin-top: 11rem;
+    margin-bottom: 11rem;
+  }
+
   .sm\:mb-0{
     margin-bottom: 0px;
   }
@@ -1400,6 +1434,10 @@ video {
 
   .sm\:mt-0{
     margin-top: 0px;
+  }
+
+  .sm\:mb-44{
+    margin-bottom: 11rem;
   }
 
   .sm\:block{
@@ -1512,6 +1550,14 @@ video {
     font-size: 90px;
   }
 
+  .sm\:font-normal{
+    font-weight: 400;
+  }
+
+  .sm\:tracking-\[-1\.8px\]{
+    letter-spacing: -1.8px;
+  }
+
   .sm\:text-\[\#000000\]{
     --tw-text-opacity: 1;
     color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -1601,6 +1647,22 @@ video {
     width: 415vw;
   }
 
+  .lg\:w-\[425vw\]{
+    width: 425vw;
+  }
+
+  .lg\:w-\[455vw\]{
+    width: 455vw;
+  }
+
+  .lg\:w-\[405vw\]{
+    width: 405vw;
+  }
+
+  .lg\:w-\[385vw\]{
+    width: 385vw;
+  }
+
   .lg\:max-w-\[1024px\]{
     max-width: 1024px;
   }
@@ -1635,6 +1697,10 @@ video {
 
   .lg\:gap-\[75px\]{
     gap: 75px;
+  }
+
+  .lg\:gap-\[50px\]{
+    gap: 50px;
   }
 
   .lg\:overflow-x-hidden{
@@ -1677,12 +1743,32 @@ video {
     margin-top: 280px;
   }
 
+  .xl\:ml-24{
+    margin-left: 6rem;
+  }
+
+  .xl\:ml-28{
+    margin-left: 7rem;
+  }
+
+  .xl\:mt-\[300px\]{
+    margin-top: 300px;
+  }
+
   .xl\:max-w-\[1320px\]{
     max-width: 1320px;
   }
 
   .xl\:max-w-\[780px\]{
     max-width: 780px;
+  }
+
+  .xl\:max-w-\[1300px\]{
+    max-width: 1300px;
+  }
+
+  .xl\:gap-\[262px\]{
+    gap: 262px;
   }
 
   .xl\:text-\[18px\]{
