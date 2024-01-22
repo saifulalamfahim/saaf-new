@@ -186,3 +186,12 @@ function sendMessage() {
     .catch();
 }
 
+
+
+
+ // For stop the right click.....................................................
+ document.addEventListener("contextmenu",function(e){
+    e.preventDefault()
+   },false)
+
+//    oncontextmenu="return false"   (for HTML File. add this in body tag)
