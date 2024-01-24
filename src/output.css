@@ -1551,16 +1551,8 @@ video {
     color: rgb(0 0 0 / var(--tw-text-opacity));
   }
 
-  .sm\:underline{
-    text-decoration-line: underline;
-  }
-
   .sm\:no-underline{
     text-decoration-line: none;
-  }
-
-  .sm\:underline-offset-0{
-    text-underline-offset: 0px;
   }
 }
 

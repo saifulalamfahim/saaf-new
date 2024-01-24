@@ -10,7 +10,7 @@ lenis.on('scroll', (e) => {
 lenis.on('scroll', ScrollTrigger.update)
 
 gsap.ticker.add((time)=>{
-  lenis.raf(time * 1000)
+  lenis.raf(time * 500)
 })
 
 gsap.ticker.lagSmoothing(0)
@@ -78,11 +78,18 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelector(".menu-btn-open").addEventListener("click", openMenu);
     document.querySelector(".menu-close-btn").addEventListener("click", closeMenu);
     // document.querySelector(".menu-link").addEventListener("click", closeMenu);
+    document.querySelectorAll(".menu-link").forEach(function(link) {
+        link.addEventListener("click", closeMenu);
+    });
     tl.reverse();
     
   });
 
-
+  function delayRedirect(url, delay) {
+    setTimeout(function () {
+        window.location.href = url;
+    }, delay);
+}
 
 //   for experience section (pin the right side)...............................
 
@@ -124,7 +131,7 @@ function handleMediaQueryChange() {
     if (largeScreen.matches) {
         // Enable the GSAP animation for screens larger than or equal to 1024px
         gsap.to(slider, {
-            xPercent: -80.5,
+            xPercent: -81,
             ease: "none",
             scrollTrigger: {
                 trigger: slider,
@@ -180,10 +187,10 @@ function sendMessage() {
     };
 
     emailjs.send(serviceID, templateID, params)
-    .then(res => {
-        alert("thank you," + params["sendername"] + "! Your message has been sent")
-    })
-    .catch();
+    // .then(res => {
+    //     alert("thank you," + params["sendername"] + "! Your message has been sent")
+    // })
+    // .catch();
 }
 
 
