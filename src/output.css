@@ -1615,6 +1615,14 @@ video {
     margin-top: 160px;
   }
 
+  .lg\:mb-5{
+    margin-bottom: 1.25rem;
+  }
+
+  .lg\:mb-10{
+    margin-bottom: 2.5rem;
+  }
+
   .lg\:block{
     display: block;
   }
