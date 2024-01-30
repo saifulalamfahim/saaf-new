@@ -577,6 +577,11 @@ video {
   margin-right: auto;
 }
 
+.my-24{
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
 .my-28{
   margin-top: 7rem;
   margin-bottom: 7rem;
@@ -590,26 +595,6 @@ video {
 .my-44{
   margin-top: 11rem;
   margin-bottom: 11rem;
-}
-
-.my-36{
-  margin-top: 9rem;
-  margin-bottom: 9rem;
-}
-
-.my-6{
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-
-.my-16{
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-}
-
-.my-24{
-  margin-top: 6rem;
-  margin-bottom: 6rem;
 }
 
 .mb-1{
@@ -682,6 +667,10 @@ video {
 
 .mt-\[60px\]{
   margin-top: 60px;
+}
+
+.mb-4{
+  margin-bottom: 1rem;
 }
 
 .box-border{
@@ -925,6 +914,18 @@ video {
   border-color: rgb(96 96 96 / var(--tw-border-opacity));
 }
 
+.border-\[\#0000008e\]{
+  border-color: #0000008e;
+}
+
+.border-\[\#0000004f\]{
+  border-color: #0000004f;
+}
+
+.border-\[\#00000028\]{
+  border-color: #00000028;
+}
+
 .bg-\[\#000000\]{
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
@@ -1040,10 +1041,6 @@ video {
   padding: 2em;
 }
 
-.p-\[12px\]{
-  padding: 12px;
-}
-
 .px-0{
   padding-left: 0px;
   padding-right: 0px;
@@ -1069,6 +1066,11 @@ video {
   padding-right: 2rem;
 }
 
+.px-\[12px\]{
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
 .py-1{
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
@@ -1092,11 +1094,6 @@ video {
 .py-\[25px\]{
   padding-top: 25px;
   padding-bottom: 25px;
-}
-
-.px-\[12px\]{
-  padding-left: 12px;
-  padding-right: 12px;
 }
 
 .pb-5{
@@ -1766,10 +1763,6 @@ video {
 
   .xl\:text-\[60px\]{
     font-size: 60px;
-  }
-
-  .xl\:text-\[20px\]{
-    font-size: 20px;
   }
 }
 
