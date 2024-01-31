@@ -2,7 +2,10 @@
 module.exports = {
   content: [
     "./src/index.html",
-    "./src/About.html"
+    "./src/About.html",
+    "./src/Blog.html",
+    "./src/projects.html",
+    "./src/hire-me.html"
   ],
   theme: {
     fontFamily: {

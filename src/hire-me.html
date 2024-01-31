@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saaf</title>
+    <link href="./output.css" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web@2.0.3"></script>
+</head> 
+<body class="bg-[#F3F3F3] ">
+   
+    <div class="box-border">
+       <!-- shows on every where -->
+       <nav class="shownNavbar max-w-[1440px] mx-auto flex justify-between items-center py-[25px] px-5 sm:px-[55px]">
+        <div class="logo text-[30px] font-medium font-dmSans">saaf.</div>
+        <div class="menu-btn-open cursor-pointer text-[25px]">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <path d="M13.3303 25.7698V19.1032H18.6636V25.7698C18.6636 26.5032 19.2636 27.1032 19.997 27.1032H23.997C24.7303 27.1032 25.3303 26.5032 25.3303 25.7698V16.4365H27.597C28.2103 16.4365 28.5036 15.6765 28.037 15.2765L16.8903 5.23648C16.3836 4.78315 15.6103 4.78315 15.1036 5.23648L3.95696 15.2765C3.50362 15.6765 3.78362 16.4365 4.39696 16.4365H6.66362V25.7698C6.66362 26.5032 7.26362 27.1032 7.99696 27.1032H11.997C12.7303 27.1032 13.3303 26.5032 13.3303 25.7698Z" fill="#000000"/>
+              </svg>
+        </div>
+        </nav>
+        <!-- after the click menu button this will be shown -->
+        <div class="menu-overlay top-0 fixed w-full p-[2em] bg-[#831ED2] pointer-events-none text-[#ffffff] font-dmSans">
+            <div class="menu-nav flex justify-between items-center sm:mx-[25px] ">
+                <div class="menu-logo text-[30px] font-medium font-dmSans">saaf.</div>
+                <div class="menu-close-btn cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 32 32" fill="none">
+                        <path d="M3 29L29 3M3 3L29 29" stroke="white" stroke-width="2.67" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="menu-cols block lg:flex mt-[30px] sm:mt-0">
+                <div class="col hidden lg:block flex-1 py-4">
+                    <div class=" video mx-auto w-[60%]">
+                        <div class="video-preview w-full h-[125px] lg:h-0 bg-[url('./images/Saiful-Alam-Fahim-main.png')] bg-cover rounded-[20px]"></div>
+                        <div class="video-details w-full pt-2">
+                            <H4 class="text-[25px]">Saiful Alam Fahim</H4>
+                            <p class="text-[#ffffffc2]">Front-end Developer / Product Designer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col flex-1 py-4 sm:ml-[150px] lg:ml-0">
+                    <div class="menu-link relative w-max mb-1 lg:mb-0 cursor-pointer">
+                        <a class="text-[18px] sm:text-[30px] lg:text-[40px]" onclick="delayRedirect('./index.html', 1600)">Home</a>
+                    </div>
+                    <div class="menu-link relative w-max mb-1 lg:mb-0 cursor-pointer">
+                        <a class="text-[18px] sm:text-[30px] lg:text-[40px]" onclick="delayRedirect('./About.html', 1600)">About / Experiences</a>
+                    </div>
+                    <div class="menu-link relative w-max mb-1 lg:mb-0 cursor-pointer">
+                        <a class="text-[18px] sm:text-[30px] lg:text-[40px]" onclick="delayRedirect('./Blog.html', 1600)">Blog</a>
+                    </div>
+                    <div class="menu-link relative w-max mb-1 lg:mb-0 cursor-pointer">
+                        <a class="text-[18px] sm:text-[30px] lg:text-[40px]" onclick="delayRedirect('./projects.html', 1600)">Projects</a>
+                    </div>
+                    <div class="menu-link relative w-max mb-1 lg:mb-10 cursor-pointer">
+                        <a class="text-[18px] sm:text-[30px] lg:text-[40px]" onclick="delayRedirect('./hire-me.html', 1600)">Hire me</a>
+                    </div>
+                    <a class="btn relative mt-8 sm:my-8 bg-[#000000] sm:bg-transparent sm:border sm:border-[#000000] w-max py-3 sm:py-5 px-14 rounded-[4px] overflow-hidden cursor-pointer" href="https://drive.google.com/file/d/1bbDIQOTwcQ1yl-d1JiQvbKcJTnOSPGrj/view" target="_blank">Resume</a>
+                </div>
+            </div>
+            <div class="menu-footer flex flex-col">
+                <div class="menu-divider w-0 h-[1px] bg-black my-4"></div>
+                <div class="menu-footer-copy flex justify-between">
+                    <div class="slogan hidden sm:block"><a href="mailto:safahim84@gmail.com">Send Email</a></div>
+                    <div class="socials flex gap-4">
+                        <a href="https://www.linkedin.com/in/saafahim/">LinkedIn</a>
+                        <a href="https://github.com/saifulalamfahim/">Github</a>
+                        <a href="https://www.facebook.com/fahim.srlsy">Facebook</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!-- Contact-->
+        <section class="flex justify-center items-center max-w-[1440px] mx-auto my-28 sm:my-16 px-5 sm:px-[60px] "> 
+             <div class="w-[100%]">
+                <h3 class="max-w-[490px] flex justify-start items-end text-[26px] sm:text-[42px] text-[#181717] font-inter leading-[40px] tracking-[-1.0px] mb-10">I am thrilled to answer to <br> your next project <span class="ml-[-80px] sm:ml-[-120px] mb-[5px]"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="21" viewBox="0 0 24 21" fill="none">
+                    <path d="M-5.24032e-07 9.01154L-3.92898e-07 12.0115L18.3146 12.0115L11.3126 18.9462L13.4097 21L24 10.5115L13.4097 1.32119e-06L11.3126 2.1L18.3146 9.01154L-5.24032e-07 9.01154Z" fill="#181717"/>
+                  </svg></span></h3>
+                <div class="flex flex-col-reverse lg:flex-row justify-between items-center gap-[30px]">
+                    <div class="">
+                        <p class="text-[22px] sm:text-[26px] text-[#000000] font-dmSans leading-[117%] mb-3"><a href="mailto:safahim84@gmail.com">safahim84@gmail.com</a></p>
+                        <p  class="text-[18px] sm:text-[20px] text-[#000000] font-dmSans leading-[117%] mb-1"><a href="https://wa.me/8801627800823">+880 1627-800823 </a><span class="text-[18px] text-green-600 font-dmSans leading-[117%] mb-1">(WhatsApp)</span></p>
+                        <p class="text-[20px] text-sky-500 font-dmSans leading-[117%]"><a href="https://join.skype.com/invite/tLcqvxuaODW9">Skype</a></p>
+                       </div>
+                       <div class="">
+                        <p class="font-inter mb-2 md:mb-0">Follow</p>
+                       <div class="flex justify-start md:justify-center items-center gap-5">
+                        <p class="text-[18px] sm:text-[22px] text-[#000000] font-dmSans leading-[117%]"><a href="https://www.linkedin.com/in/saafahim/">LinkedIn</a></p>
+                        <p class="text-[18px] sm:text-[22px] text-[#000000] font-dmSans leading-[117%]"><a href="https://github.com/saifulalamfahim">Github</a></p>
+                        <p class="text-[18px] sm:text-[22px] text-[#000000] font-dmSans leading-[117%]"><a href="https://www.facebook.com/fahim.srlsy/">Facebook</a></p>
+                       
+                       </div>
+                       </div>
+                </div>
+                <form class="font-inter w-full ">
+                   <div class="flex justify-between items-center gap-2">
+                    <div class="w-full mb-2">
+                        <input type="text" id="name" name="text" placeholder="eg. John Dow" class="w-full px-6 h-[51px] rounded-[5px] border-[2px] bg-[#000000] text-[#ffffff] border-[#1E2D3D] focus:outline-none mx-auto">
+                    </div>
+                    <div class="w-full mb-2">
+                        <input type="email" id="email" placeholder="eg. johndow@gmail.com" class="w-full px-6 h-[51px] rounded-[5px] border-[2px] bg-[#000000] text-[#ffffff] border-[#1E2D3D] focus:outline-none mx-auto">
+                    </div>
+                   </div>
+                    <div class="mb-2">
+                        <input type="text" id="subject" placeholder="subject" class="w-full px-6 h-[51px] rounded-[5px] border-[2px] bg-[#000000] text-[#ffffff] border-[#1E2D3D] focus:outline-none mx-auto">
+                    </div>
+                    <div class="mb-5">
+                        <textarea name="message" id="message" placeholder="Message" class="w-full px-6 h-[251px] rounded-[5px] border-[2px] bg-[#000000] text-[#ffffff] border-[#1E2D3D] focus:outline-none mx-auto pt-3"></textarea>
+                    </div>
+                    <div class="mb-2">
+                        <!-- <button onclick="sendMessage()">Send Message</button> -->
+                        <button onclick="sendMessage()" class="btnTwo bg-[#000000] text-[#ffffff] sm:text-[#000000] sm:bg-transparent sm:border sm:border-[#000000] w-max py-2 px-8 rounded-[12px] font-inter font-medium overflow-hidden cursor-pointer mb-2 sm:mb-0">
+                            Send
+                        </button>
+                    </div>
+                    <p class="hidden text-[14px] sm:text-[18px] text-blue-600">✔ your message is successfully received</p>
+                </form> 
+             </div>
+         </section>
+       
+         <!-- Footer -->
+         <section class="flex justify-center items-center max-w-[1440px] mx-auto my-4 px-5 sm:px-[60px]">
+            <div class="w-[100%] flex flex-col sm:flex-row justify-center sm:justify-between items-center border-t border-[#000000] pt-3">
+                <p  class="text-[12px] sm:text-[16px] xl:text-[18px] text-[#606060] font-dmSans leading-[117%]">Copyright 2024 all rights saaf reserved</p>
+                <ul class="hidden sm:flex gap-[20px] text-[#000000]">
+                    <li class="text-[12px] sm:text-[16px] xl:text-[18px] font-dmSans leading-[117%]"><a href="">About</a></li>
+                    <li class="text-[12px] sm:text-[16px] xl:text-[18px] font-dmSans leading-[117%]"><a href="">Blog</a></li>
+                    <li class="text-[12px] sm:text-[16px] xl:text-[18px] font-dmSans leading-[117%]"><a href="">Contact</a></li>
+                </ul>
+            </div>
+         </section>
+    </div>
+       
+
+    <!-- For Cursor -->
+    <div class="circle">
+        <!-- <img src="./images/run-sports-runner-svgrepo-com.svg" alt=""> -->
+    </div>
+    <div class="circle-follow">
+        <img class="hidden sm:block" src="./images/bee-svgrepo-com.svg" alt="">
+    </div>
+    
+
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.33/dist/lenis.min.js"></script> 
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js" integrity="sha512-OzC82YiH3UmMMs6Ydd9f2i7mS+UFL5f977iIoJ6oy07AJT+ePds9QOEtqXztSH29Nzua59fYS36knmMcv79GOg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script src="./script.js"></script>
+   
+</body>
+</html>
