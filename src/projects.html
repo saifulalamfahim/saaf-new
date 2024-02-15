@@ -19,62 +19,95 @@
               </svg>
         </div>
         </nav>
-    <!-- after the click menu button this will be shown -->
-    <div class="menu-overlay top-0 fixed w-full p-[2em] bg-[#831ED2] pointer-events-none text-[#ffffff] font-dmSans">
-        <div class="menu-nav flex justify-between items-center sm:mx-[25px] ">
-            <div class="menu-logo text-[30px] font-medium font-dmSans">saaf.</div>
-            <div class="menu-close-btn cursor-pointer">
-                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 32 32" fill="none">
-                    <path d="M3 29L29 3M3 3L29 29" stroke="white" stroke-width="2.67" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
+        <!-- after the click menu button this will be shown -->
+        <div class="menu-overlay top-0 fixed w-full p-[2em] bg-[#831ED2] pointer-events-none text-[#ffffff] font-dmSans">
+            <div class="menu-nav flex justify-between items-center sm:mx-[25px] ">
+                <div class="menu-logo text-[30px] font-medium font-dmSans">saaf.</div>
+                <div class="menu-close-btn cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 32 32" fill="none">
+                        <path d="M3 29L29 3M3 3L29 29" stroke="white" stroke-width="2.67" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
             </div>
-        </div>
-        <div class="menu-cols block lg:flex mt-[30px] sm:mt-0">
-            <div class="col hidden lg:block flex-1 py-4">
-                <div class=" video mx-auto w-[60%]">
-                    <div class="video-preview w-full h-[125px] lg:h-0 bg-[url('./images/Saiful-Alam-Fahim-main.png')] bg-cover rounded-[20px]"></div>
-                    <div class="video-details w-full pt-2">
-                        <H4 class="text-[25px]">Saiful Alam Fahim</H4>
-                        <p class="text-[#ffffffc2]">Front-end Developer / Product Designer</p>
+            <div class="menu-cols block lg:flex mt-[30px] sm:mt-0">
+                <div class="col hidden lg:block flex-1 py-4">
+                    <div class=" video mx-auto w-[60%]">
+                        <div class="video-preview w-full h-[125px] lg:h-0 bg-[url('./images/Saiful-Alam-Fahim-main.png')] bg-cover rounded-[20px]"></div>
+                        <div class="video-details w-full pt-2">
+                            <H4 class="text-[25px]">Saiful Alam Fahim</H4>
+                            <p class="text-[#ffffffc2]">Front-end Developer / Product Designer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col flex-1 py-4 sm:ml-[150px] lg:ml-0">
+                    <div class="menu-link relative w-max mb-1 lg:mb-0 cursor-pointer">
+                        <a class="text-[18px] sm:text-[30px] lg:text-[40px]" onclick="delayRedirect('./index.html', 1600)">Home</a>
+                    </div>
+                    <div class="menu-link relative w-max mb-1 lg:mb-0 cursor-pointer">
+                        <a class="text-[18px] sm:text-[30px] lg:text-[40px]" onclick="delayRedirect('./About.html', 1600)">About / Experiences</a>
+                    </div>
+                    <div class="menu-link relative w-max mb-1 lg:mb-0 cursor-pointer">
+                        <a class="text-[18px] sm:text-[30px] lg:text-[40px]" onclick="delayRedirect('./Blog.html', 1600)">Blog</a>
+                    </div>
+                    <div class="menu-link relative w-max mb-1 lg:mb-0 cursor-pointer">
+                        <a class="text-[18px] sm:text-[30px] lg:text-[40px]" onclick="delayRedirect('./projects.html', 1600)">Projects</a>
+                    </div>
+                    <div class="menu-link relative w-max mb-6 sm:mb-10 cursor-pointer">
+                        <a class="text-[18px] sm:text-[30px] lg:text-[40px]" onclick="delayRedirect('./hire-me.html', 1600)">Hire me</a>
+                    </div>
+                    <a class="btn relative mt-8 sm:my-8 bg-[#000000] sm:bg-transparent sm:border sm:border-[#000000] w-max py-3 sm:py-5 px-14 rounded-[4px] overflow-hidden cursor-pointer" href="https://drive.google.com/file/d/1bbDIQOTwcQ1yl-d1JiQvbKcJTnOSPGrj/view" target="_blank">Resume</a>
+                </div>
+            </div>
+            <div class="menu-footer flex flex-col">
+                <div class="menu-divider w-0 h-[1px] bg-black my-4"></div>
+                <div class="menu-footer-copy flex justify-between">
+                    <div class="slogan hidden sm:block"><a href="mailto:safahim84@gmail.com">Send Email</a></div>
+                    <div class="socials flex gap-4">
+                        <a href="https://www.linkedin.com/in/saafahim/">LinkedIn</a>
+                        <a href="https://github.com/saifulalamfahim/">Github</a>
+                        <a href="https://www.facebook.com/fahim.srlsy">Facebook</a>
                     </div>
                 </div>
             </div>
-            <div class="col flex-1 py-4 sm:ml-[150px] lg:ml-0">
-                <div class="menu-link relative w-max mb-1 lg:mb-0 cursor-pointer">
-                    <a class="text-[18px] sm:text-[30px] lg:text-[40px]" onclick="delayRedirect('./index.html', 1600)">Home</a>
-                </div>
-                <div class="menu-link relative w-max mb-1 lg:mb-0 cursor-pointer">
-                    <a class="text-[18px] sm:text-[30px] lg:text-[40px]" onclick="delayRedirect('./About.html', 1600)">About / Experiences</a>
-                </div>
-                <div class="menu-link relative w-max mb-1 lg:mb-0 cursor-pointer">
-                    <a class="text-[18px] sm:text-[30px] lg:text-[40px]" onclick="delayRedirect('./Blog.html', 1600)">Blog</a>
-                </div>
-                <div class="menu-link relative w-max mb-1 lg:mb-0 cursor-pointer">
-                    <a class="text-[18px] sm:text-[30px] lg:text-[40px]" onclick="delayRedirect('./projects.html', 1600)">Projects</a>
-                </div>
-                <div class="menu-link relative w-max mb-6 sm:mb-10 cursor-pointer">
-                    <a class="text-[18px] sm:text-[30px] lg:text-[40px]" onclick="delayRedirect('./hire-me.html', 1600)">Hire me</a>
-                </div>
-                <a class="btn relative mt-8 sm:my-8 bg-[#000000] sm:bg-transparent sm:border sm:border-[#000000] w-max py-3 sm:py-5 px-14 rounded-[4px] overflow-hidden cursor-pointer" href="https://drive.google.com/file/d/1bbDIQOTwcQ1yl-d1JiQvbKcJTnOSPGrj/view" target="_blank">Resume</a>
-            </div>
         </div>
-        <div class="menu-footer flex flex-col">
-            <div class="menu-divider w-0 h-[1px] bg-black my-4"></div>
-            <div class="menu-footer-copy flex justify-between">
-                <div class="slogan hidden sm:block"><a href="mailto:safahim84@gmail.com">Send Email</a></div>
-                <div class="socials flex gap-4">
-                    <a href="https://www.linkedin.com/in/saafahim/">LinkedIn</a>
-                    <a href="https://github.com/saifulalamfahim/">Github</a>
-                    <a href="https://www.facebook.com/fahim.srlsy">Facebook</a>
+        <!-- project counter -->
+        <section class="flex justify-center items-center max-w-[1440px] mx-auto mt-10 mb-44 px-5 sm:px-[60px]">
+           <div class="">
+            <div class="flex justify-center items-center gap-[30px] mb-[30px]">
+                <div class="w-[350px] bg-gradient-to-r from-[#1ed2ab] to-[#1ed2ab]  rounded-[12px] shadow-2xl p-5">
+                    <h2 class="text-[76px] text-white font-semibold font-dmSans">40+</h2>
+                    <h5 class="text-[14px] text-[#ffffffbe] font-normal font-dmSans">Global Projects</h5>
+                    <h5 class="text-[24px] text-[#ffffff] font-normal font-dmSans">successfully Completed </h5>
+                </div>
+                <div class="w-[700px] bg-gradient-to-r from-[#831ED2] to-[#831ED2]  rounded-[12px] shadow-2xl p-5">
+                    <h2 class="text-[66px] text-white font-semibold font-dmSans">120+</h2>
+                    <h5 class="text-[14px] text-[#ffffffbe] font-normal font-dmSans">Theme</h5>
+                    <h5 class="text-[17px] text-[#ffffff] font-normal font-dmSans">Developed and optimized over 120+ pixel-perfect, conversion-oriented landing pages using no code website builder.</h5>
                 </div>
             </div>
-        </div>
-    </div>
-       
-    <!-- demo -->
-    <section class="flex justify-center items-center h-screen text-[88px] font-code">
-        <h1>Projects</h1>
-    </section>
+            <div class="flex justify-center items-center gap-[30px]">
+                <div class="w-[340px] bg-gradient-to-r from-[#bd1ed2] to-[#bd1ed2]  rounded-[12px] shadow-2xl p-5">
+                    <h2 class="text-[76px] text-white font-semibold font-dmSans">02+</h2>
+                    <h5 class="text-[14px] text-[#ffffffbe] font-normal font-dmSans">Years</h5>
+                    <h5 class="text-[24px] text-[#ffffff] font-normal font-dmSans">Work experiences</h5>
+                </div>
+                <div class="w-[340px] bg-gradient-to-r from-[#632929] to-[#632929]  rounded-[12px] shadow-2xl p-5">
+                    <h2 class="text-[76px] text-white font-semibold font-dmSans">28+</h2>
+                    <h5 class="text-[14px] text-[#ffffffbe] font-normal font-dmSans">UI Themes</h5>
+                    <h5 class="text-[24px] text-[#ffffff] font-normal font-dmSans">Live on Global Market</h5>
+                </div>
+                <div class="w-[340px] bg-gradient-to-r from-[#831ED2] to-[#831ED2]  rounded-[12px] shadow-2xl p-5">
+                    <h2 class="text-[76px] text-white font-semibold font-dmSans">07+</h2>
+                    <h5 class="text-[14px] text-[#ffffffbe] font-normal font-dmSans">Functional Dashboard</h5>
+                    <h5 class="text-[24px] text-[#ffffff] font-normal font-dmSans">successfully Completed </h5>
+                </div>
+            </div>
+           </div>
+        </section>
+
+
+
+
          <!-- Footer -->
          <section class="flex justify-center items-center max-w-[1440px] mx-auto my-4 px-5 sm:px-[60px]">
             <div class="w-[100%] flex flex-col sm:flex-row justify-center sm:justify-between items-center border-t border-[#000000] pt-3">

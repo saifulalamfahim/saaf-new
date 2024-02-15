@@ -602,6 +602,11 @@ video {
   margin-bottom: 2rem;
 }
 
+.my-20{
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
 .mb-1{
   margin-bottom: 0.25rem;
 }
@@ -686,6 +691,26 @@ video {
   margin-top: 60px;
 }
 
+.mt-20{
+  margin-top: 5rem;
+}
+
+.mb-44{
+  margin-bottom: 11rem;
+}
+
+.mt-10{
+  margin-top: 2.5rem;
+}
+
+.mt-14{
+  margin-top: 3.5rem;
+}
+
+.mt-12{
+  margin-top: 3rem;
+}
+
 .box-border{
   box-sizing: border-box;
 }
@@ -742,6 +767,14 @@ video {
   width: 100%;
 }
 
+.w-\[340px\]{
+  width: 340px;
+}
+
+.w-\[350px\]{
+  width: 350px;
+}
+
 .w-\[375px\]{
   width: 375px;
 }
@@ -752,6 +785,10 @@ video {
 
 .w-\[60\%\]{
   width: 60%;
+}
+
+.w-\[700px\]{
+  width: 700px;
 }
 
 .w-full{
@@ -1037,6 +1074,134 @@ video {
   background-image: url('./images/Saiful-Alam-Fahim-main.png');
 }
 
+.bg-gradient-to-r{
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
+.from-\[\#1ed2ab\]{
+  --tw-gradient-from: #1ed2ab var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(30 210 171 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-\[\#831ED2\]{
+  --tw-gradient-from: #831ED2 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(131 30 210 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-\[\#bd1ed2\]{
+  --tw-gradient-from: #bd1ed2 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(189 30 210 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-\[\#c\]{
+  --tw-gradient-from: #c var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(255 255 255 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-\[\#e1ee31\]{
+  --tw-gradient-from: #e1ee31 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(225 238 49 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-\[\#e1ee31be\]{
+  --tw-gradient-from: #e1ee31be var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(225 238 49 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-\[\#41ee31be\]{
+  --tw-gradient-from: #41ee31be var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(65 238 49 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-\[\#41ee3194\]{
+  --tw-gradient-from: #41ee3194 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(65 238 49 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-\[\#41ee31\]{
+  --tw-gradient-from: #41ee31 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(65 238 49 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-\[\#31e1ee\]{
+  --tw-gradient-from: #31e1ee var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(49 225 238 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-\[\#31e1ee9a\]{
+  --tw-gradient-from: #31e1ee9a var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(49 225 238 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-\[\#ee31e4\]{
+  --tw-gradient-from: #ee31e4 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(238 49 228 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-\[\#ee3131\]{
+  --tw-gradient-from: #ee3131 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(238 49 49 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-\[\#632929\]{
+  --tw-gradient-from: #632929 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(99 41 41 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.to-\[\#1ed2ab\]{
+  --tw-gradient-to: #1ed2ab var(--tw-gradient-to-position);
+}
+
+.to-\[\#831ED2\]{
+  --tw-gradient-to: #831ED2 var(--tw-gradient-to-position);
+}
+
+.to-\[\#bd1ed2\]{
+  --tw-gradient-to: #bd1ed2 var(--tw-gradient-to-position);
+}
+
+.to-\[\#e1ee31\]{
+  --tw-gradient-to: #e1ee31 var(--tw-gradient-to-position);
+}
+
+.to-\[41ee31be\]{
+  --tw-gradient-to: 41ee31be var(--tw-gradient-to-position);
+}
+
+.to-\[\#41ee31be\]{
+  --tw-gradient-to: #41ee31be var(--tw-gradient-to-position);
+}
+
+.to-\[\#41ee31d3\]{
+  --tw-gradient-to: #41ee31d3 var(--tw-gradient-to-position);
+}
+
+.to-\[\#41ee31e7\]{
+  --tw-gradient-to: #41ee31e7 var(--tw-gradient-to-position);
+}
+
+.to-\[\#31e1ee\]{
+  --tw-gradient-to: #31e1ee var(--tw-gradient-to-position);
+}
+
+.to-\[\#632929\]{
+  --tw-gradient-to: #632929 var(--tw-gradient-to-position);
+}
+
 .bg-cover{
   background-size: cover;
 }
@@ -1149,6 +1314,10 @@ video {
   font-size: 14px;
 }
 
+.text-\[17px\]{
+  font-size: 17px;
+}
+
 .text-\[18px\]{
   font-size: 18px;
 }
@@ -1185,6 +1354,14 @@ video {
   font-size: 40px;
 }
 
+.text-\[66px\]{
+  font-size: 66px;
+}
+
+.text-\[76px\]{
+  font-size: 76px;
+}
+
 .text-\[88px\]{
   font-size: 88px;
 }
@@ -1199,6 +1376,10 @@ video {
 
 .font-normal{
   font-weight: 400;
+}
+
+.font-semibold{
+  font-weight: 600;
 }
 
 .italic{
@@ -1258,6 +1439,10 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-\[\#ffffffbe\]{
+  color: #ffffffbe;
+}
+
 .text-\[\#ffffffc2\]{
   color: #ffffffc2;
 }
@@ -1277,8 +1462,19 @@ video {
   color: rgb(14 165 233 / var(--tw-text-opacity));
 }
 
+.text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .underline{
   text-decoration-line: underline;
+}
+
+.shadow-2xl{
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .shadow-lg{
