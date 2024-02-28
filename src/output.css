@@ -568,6 +568,22 @@ video {
   top: 0px;
 }
 
+.z-\[99999\]{
+  z-index: 99999;
+}
+
+.z-\[-1\]{
+  z-index: -1;
+}
+
+.z-\[1\]{
+  z-index: 1;
+}
+
+.z-\[9999\]{
+  z-index: 9999;
+}
+
 .m-auto{
   margin: auto;
 }
@@ -694,6 +710,22 @@ video {
   margin-top: 60px;
 }
 
+.mt-\[80px\]{
+  margin-top: 80px;
+}
+
+.mt-\[100px\]{
+  margin-top: 100px;
+}
+
+.mt-20{
+  margin-top: 5rem;
+}
+
+.mt-14{
+  margin-top: 3.5rem;
+}
+
 .box-border{
   box-sizing: border-box;
 }
@@ -754,14 +786,6 @@ video {
   width: 100%;
 }
 
-.w-\[340px\]{
-  width: 340px;
-}
-
-.w-\[350px\]{
-  width: 350px;
-}
-
 .w-\[375px\]{
   width: 375px;
 }
@@ -774,10 +798,6 @@ video {
   width: 60%;
 }
 
-.w-\[700px\]{
-  width: 700px;
-}
-
 .w-full{
   width: 100%;
 }
@@ -785,18 +805,6 @@ video {
 .w-max{
   width: -moz-max-content;
   width: max-content;
-}
-
-.w-\[450px\]{
-  width: 450px;
-}
-
-.w-\[900px\]{
-  width: 900px;
-}
-
-.w-\[400px\]{
-  width: 400px;
 }
 
 .max-w-\[1170px\]{
@@ -831,16 +839,28 @@ video {
   flex: 1 1 0%;
 }
 
+@keyframes bounce{
+  0%, 100%{
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8,0,1,1);
+  }
+
+  50%{
+    transform: none;
+    animation-timing-function: cubic-bezier(0,0,0.2,1);
+  }
+}
+
+.animate-bounce{
+  animation: bounce 1s infinite;
+}
+
 .cursor-pointer{
   cursor: pointer;
 }
 
 .list-disc{
   list-style-type: disc;
-}
-
-.grid-cols-2{
-  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .grid-cols-1{
@@ -883,10 +903,6 @@ video {
   justify-content: space-between;
 }
 
-.justify-items-center{
-  justify-items: center;
-}
-
 .gap-3{
   gap: 0.75rem;
 }
@@ -918,6 +934,12 @@ video {
 .gap-x-\[30px\]{
   -moz-column-gap: 30px;
        column-gap: 30px;
+}
+
+.space-y-\[10px\] > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(10px * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(10px * var(--tw-space-y-reverse));
 }
 
 .overflow-hidden{
@@ -1281,8 +1303,8 @@ video {
   font-size: 40px;
 }
 
-.text-\[66px\]{
-  font-size: 66px;
+.text-\[48px\]{
+  font-size: 48px;
 }
 
 .text-\[76px\]{
@@ -1291,10 +1313,6 @@ video {
 
 .text-\[88px\]{
   font-size: 88px;
-}
-
-.text-\[48px\]{
-  font-size: 48px;
 }
 
 .font-bold{
@@ -1396,10 +1414,6 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-\[48\]{
-  color: 48;
 }
 
 .underline{
@@ -1594,6 +1608,14 @@ video {
     margin-top: 0px;
   }
 
+  .sm\:mt-\[80px\]{
+    margin-top: 80px;
+  }
+
+  .sm\:mt-\[100px\]{
+    margin-top: 100px;
+  }
+
   .sm\:block{
     display: block;
   }
@@ -1612,10 +1634,6 @@ video {
 
   .sm\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .sm\:grid-cols-3{
-    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .sm\:flex-row{
@@ -1756,16 +1774,16 @@ video {
     margin-bottom: 0px;
   }
 
+  .md\:mb-5{
+    margin-bottom: 1.25rem;
+  }
+
   .md\:mt-\[-150px\]{
     margin-top: -150px;
   }
 
   .md\:mt-\[550px\]{
     margin-top: 550px;
-  }
-
-  .md\:mb-5{
-    margin-bottom: 1.25rem;
   }
 
   .md\:flex{
@@ -1820,6 +1838,18 @@ video {
 
   .lg\:mt-\[160px\]{
     margin-top: 160px;
+  }
+
+  .lg\:mt-\[120px\]{
+    margin-top: 120px;
+  }
+
+  .lg\:mt-\[60px\]{
+    margin-top: 60px;
+  }
+
+  .lg\:mt-\[80px\]{
+    margin-top: 80px;
   }
 
   .lg\:block{
@@ -1906,6 +1936,10 @@ video {
 }
 
 @media (min-width: 1280px){
+  .xl\:mb-0{
+    margin-bottom: 0px;
+  }
+
   .xl\:mb-2{
     margin-bottom: 0.5rem;
   }
@@ -1922,12 +1956,40 @@ video {
     margin-top: 280px;
   }
 
-  .xl\:mb-0{
-    margin-bottom: 0px;
+  .xl\:mt-\[80px\]{
+    margin-top: 80px;
   }
 
-  .xl\:w-\[700px\]{
-    width: 700px;
+  .xl\:mt-\[200px\]{
+    margin-top: 200px;
+  }
+
+  .xl\:mt-\[120px\]{
+    margin-top: 120px;
+  }
+
+  .xl\:mt-\[160px\]{
+    margin-top: 160px;
+  }
+
+  .xl\:mt-\[180px\]{
+    margin-top: 180px;
+  }
+
+  .xl\:mt-\[170px\]{
+    margin-top: 170px;
+  }
+
+  .xl\:mt-\[140px\]{
+    margin-top: 140px;
+  }
+
+  .xl\:mt-\[100px\]{
+    margin-top: 100px;
+  }
+
+  .xl\:mt-\[800px\]{
+    margin-top: 800px;
   }
 
   .xl\:max-w-\[1300px\]{
